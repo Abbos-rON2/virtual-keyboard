@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.keyboard{
+    width: 705px;
+    margin: 0 auto;
+    padding: 5px;
+    padding-left: 0;
+    padding-bottom: 0;
+    background: #888888;
+    border: 3px solid #222222;
+    border-radius: 5px;
+}
+.keyboard-row{
+    clear: both;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 8px;
+}
+.key{
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin-left: 6px;
+    font-weight: 500;
+    line-height: 40px;
+    text-align: center;
+    color: #ffffff;
+    background: #444444;
+    border-radius: 3px;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.3s;
+}
+textarea{
+    resize: none;
+    width: 100%;
+    height: 160px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.Backspace{
+    /* Backspace */
+    width: 90px;
+}
+.Delete{
+    /* Del */
+    width: 70px;
+}
+.Tab{
+    /* Tab */
+    width: 60px;
+}
+.CapsLock{
+    /* CapsLock */
+    width: 90px;
+}
+.Enter{
+    /* Enter */
+    width: 86px;
+}
+
+.ShiftLeft{
+    /* Left Shift */
+    width: 115px;
+}
+.ShiftRight{
+    width: 61px;
+}
+.Space{
+    width: 300px;
+}
+.keyboard-row:last-child .key:last-child{
+    width: 60px;
+}
+
+.key.active{
+    background-color: #332341;
+    border-radius: 10px;
+}
+.lang-info{
+    margin-right: 10px;
+    align-self: center;
+    width: 20px;
+    height: 20px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+    color: #ffffff;
+    border: none;
+    background: #444444;
+    border-radius: 3px;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.3s;
+}
+.info{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
